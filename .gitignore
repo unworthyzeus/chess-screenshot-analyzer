@@ -1,0 +1,14 @@
+node_modules/
+dist/
+runtime/
+src/ort/
+public/cm-chessboard/
+*.log
+.env
+.env.*
+!.env.example
+*.exe
+*.zip
+*.7z
+.DS_Store
+Thumbs.db

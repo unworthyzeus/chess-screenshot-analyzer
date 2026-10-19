@@ -1,0 +1,38 @@
+CHESS SCREENSHOT ANALYSIS
+
+Open the Chess Screenshot Analysis desktop shortcut.
+Click Preload for fastest results, and wait for Everything preloaded.
+Copy a chessboard image, then press Ctrl+V in the tool.
+Stockfish 19 starts automatically and shows up to four live lines.
+
+The side whose pieces are at the bottom moves by default.
+Change Side to move to override it. A new image returns to automatic detection.
+Use Screenshot orientation if the detected board orientation is wrong.
+Click a move in a line to preview that position.
+Drag a piece, or click it and then its destination, to play a legal move.
+The turn advances and Stockfish recalculates automatically after each move.
+Undo move goes back; Reset position restores the original screenshot or FEN.
+You can also play a move from a line preview to analyze that continuation.
+Pawn promotion offers a choice of queen, rook, bishop, or knight.
+
+The default search is five seconds. First results appear while it is searching.
+Choose one second for quick checks, or a longer search for difficult positions.
+Stop pauses the engine; Analyze again restarts it.
+
+Preload warms the screenshot recognition model, its inference runtime,
+the board assets, and Stockfish's built-in neural network. They remain ready
+in memory while the tool and its local server are running. Reopening or
+refreshing the page may require preloading the browser model again.
+
+Screenshots do not reveal castling history or en passant rights.
+Castling checkboxes for White and Black are guessed from the king and rook
+starting squares. Uncheck rights if those pieces moved earlier, or use
+Guess from board to infer them again. Played moves update rights automatically.
+Check the recognized board, side to move, and Position FEN when needed.
+Uncertain piece recognition asks you to check the board before analysis.
+
+This tool runs locally at http://127.0.0.1:8765.
+Images are processed locally and are not uploaded.
+Engine: Stockfish 19, 12 threads, 1024 MB hash, full strength, four lines.
+Recognition and the board interface build on Fenshot and cm-chessboard.
+Their licenses remain in FENSHOT-LICENSE and node_modules.
